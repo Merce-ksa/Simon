@@ -1,0 +1,128 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800");
+
+:root {
+  --color-primary: #27496d;
+  --color-green: #00bdaa;
+  --color-green-light: #01fce3;
+  --color-blue: #3490de;
+  --color-blue-light: #8bc9fd;
+  --color-red: #ff2e63;
+  --color-red-light: #fe80a0;
+  --color-yellow: #f9ed69;
+  --color-yellow-light: #fcf6af;
+  --color-light: #e9eaea;
+  --color-dark: #2c3e50;
+
+  --font: 'Montserrat', sans-serif;
+
+  --light: 400;
+  --regular: 500;
+  --semibold: 600;
+  --bold: 700;
+
+  --margin: 10px;
+  --padding: 20px;
+  --radius: 20px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-primary);
+  font-family: var(--font);
+  color: var(--color-light);
+  position: relative;
+}
+
+.title-game {
+  margin: var(--margin);
+  text-align: center;
+}
+
+.levelboard {
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  font-size: 25px;
+  text-align: center;
+  font-weight: var(--regular);
+  opacity: 0;
+}
+
+.gameboard {
+  width: 100vh;
+  height: 100vh;
+  max-width: 550px;
+  max-height: 550px;
+  display: grid;
+  grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+  margin: auto;
+}
+
+.color {
+  margin: var(--margin);
+  border-radius: var(--radius);
+  cursor: pointer;
+}
+
+.green {
+  background-color: var(--color-green);
+}
+
+.green.light {
+  background-color: var(--color-green-light);
+}
+
+.red {
+  background-color: var(--color-red);
+}
+
+.red.light {
+  background-color: var(--color-red-light);
+}
+
+.yellow {
+  background-color: var(--color-yellow);
+}
+
+.yellow.light {
+  background-color: var(--color-yellow-light);
+}
+
+.blue {
+  background-color: var(--color-blue);
+}
+
+.blue.light {
+  background-color: var(--color-blue-light);
+}
+
+.btn-start {
+  height: 150px;
+  width: 150px;
+  display: block;
+  position: absolute;
+  top: calc(50% - 20px);
+  left: calc(50% - 75px);
+  padding: var(--padding);
+  cursor: pointer;
+  outline: 0;
+  border-radius: 50%;
+  border: 10px solid var(--color-primary);
+  background-color: var(--color-light);
+  font-family: var(--font);
+  font-size: 35px;
+  font-weight: var(--regular);
+  transition: 0.2s;
+}
+
+.btn-start:active {
+  border: 20px solid var(--color-primary);
+  font-size: 30px;
+}
+
+.btn-active {
+  display: block;
+}

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+
+    <title>Simon Game</title>
+  </head>
+  <body>
+    <div class="title-game">
+      <h1>Simon</h1>
+    </div>
+
+    <div id="levelboard" class="levelboard">
+      <p>Level <span id="level"></span></p>
+    </div>
+
+    <div class="gameboard">
+      <div id="green" class="color green" data-color="green"></div>
+      <div id="red" class="color red" data-color="red"></div>
+      <div id="yellow" class="color yellow" data-color="yellow"></div>
+      <div id="blue" class="color blue" data-color="blue"></div>
+    </div>
+
+    <button id="btn-start" class="btn-start" onclick="startGame()">Go!</button>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
+    <script type="text/javascript" src="main.js"></script>
+
+  </body>
+</html>
